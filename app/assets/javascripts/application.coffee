@@ -5,13 +5,16 @@
 #
 #= require_self
 #
+##### BOWER COMPONENTS
+#
+#= require jquery/jquery
+#= require jquery-ui/ui/minified/jquery-ui.min
+#= require jquery-ujs/src/rails
+#= require jsrender/jsrender.min
+#= require underscore/underscore-min
+#
 ##### VENDOR
 #
-#= require jquery
-#= require jquery-ui
-#= require jquery_ujs
-#= require jsrender
-#= require underscore
 #= require bootstrap/bootstrap-modal
 #= require tooltipster/tooltipster
 #= require jquery.inview/jquery.inview

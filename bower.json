@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "jquery": "~2.0.0",
+    "jquery-ui": "~1.10.3",
+    "underscore": "~1.4.4",
+    "jquery-tmpl": "latest",
+    "jquery-ujs": "latest",
+    "jsrender": "git://github.com/BorisMoore/jsrender.git"
+  }
+}

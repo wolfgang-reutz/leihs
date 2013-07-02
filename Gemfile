@@ -29,11 +29,8 @@ gem 'guard-jasmine', '~> 1.11', :group => [:test, :development]
 gem 'haml', '~> 3.1'
 gem 'haml_assets', '~> 0.2'
 gem 'jasminerice', '~> 0.0.10', :group => [:test, :development] # needed for implement coffeescript, fixtures and asset pipeline serverd css into jasmine
-gem 'jquery-rails', '2.1.3' # '~> 2.1' FIXME the version 2.1.4 clashes with underscore-rails 1.4.2.1
-gem 'jquery-tmpl-rails', '~> 1.1'
 gem 'jruby-openssl', :platform => :jruby
 gem 'json', '~> 1.7'
-gem "jsrender-rails", "~> 1.2", :git => 'https://github.com/spape/jsrender-rails.git', :branch => "own_template_prefix"
 gem 'launchy', '~> 2.1', :group => [:test, :development]
 gem 'meta_request', :group => :development
 gem 'mini_magick', '~> 3.4'
@@ -63,7 +60,6 @@ gem 'thin', :group => :development, :platform => :mri # web server (Webrick do n
 gem 'timecop', '~> 0.5', :group => [:test, :development]
 gem 'trinidad', :group => :development, :platform => :jruby # web server (Webrick do not support keep-alive connections)
 gem 'uglifier', '~> 1.3', :group => :assets
-gem 'underscore-rails', '~> 1.4'
 gem 'uuidtools', '~> 2.1' # needed for creating unique ids during tests (factories)
 gem 'will_paginate', :git => 'https://github.com/halloffame/will_paginate.git' # fixing count distinct, alternatives: .count(:id, :distinct => true)
 gem 'yard', :group => [:test, :development]
