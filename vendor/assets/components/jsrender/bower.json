@@ -1,0 +1,8 @@
+{
+  "name": "jsrender",
+  "version": "1.0.0-beta",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/BorisMoore/jsrender.git"
+  }
+}

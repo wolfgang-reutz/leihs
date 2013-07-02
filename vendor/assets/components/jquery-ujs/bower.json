@@ -1,0 +1,9 @@
+{
+  "name": "jquery-ujs",
+  "version": "0.0.0",
+  "commit": "e9e8b8fd3abb1571781bca7640e5c0c4d9cea2e3",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rails/jquery-ujs.git"
+  }
+}
