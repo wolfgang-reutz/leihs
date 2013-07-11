@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.11' # FIXME cannot upgrade to 3.2.12 because migrations are not running
+gem 'rails', '3.2.13'
 
 gem 'active_hash', '~> 0.9'
 gem 'activerecord-jdbcmysql-adapter', :platform => :jruby
