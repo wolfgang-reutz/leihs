@@ -266,7 +266,6 @@ GEM
       ffi (>= 0.5.0)
     rb-kqueue (0.2.0)
       ffi (>= 0.5.0)
-    rcapture (1.0.4)
     rdoc (3.12.2)
       json (~> 1.4)
     redcarpet (3.0.0)
@@ -289,8 +288,7 @@ GEM
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
       rspec-mocks (~> 2.14.0)
-    ruby-graphviz (1.0.9)
-    ruby_parser (3.2.1)
+    ruby_parser (3.2.2)
       sexp_processor (~> 4.1)
     rubyzip (0.9.9)
     sass (3.2.9)
@@ -396,12 +394,10 @@ DEPENDENCIES
   pry-rails (~> 0.2)
   rails (= 3.2.13)
   rails_autolink (~> 1.0)
-  rcapture
   redcarpet
   rgl (~> 0.4.0)
   rspec (~> 2.12)
   rspec-rails (~> 2.12)
-  ruby-graphviz
   ruby_parser (~> 3.1)
   sass (~> 3.2)
   sass-rails (~> 3.2)
