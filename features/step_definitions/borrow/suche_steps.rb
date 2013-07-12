@@ -6,7 +6,7 @@ Dann(/^sieht man die Suche$/) do
 end
 
 Wenn(/^man einen Suchbegriff eingibt$/) do
-  @model = @current_user.models.detect {|m| @current_user.models.where("models.name like '%#{m.name[0..3]}%'").length >= 6}
+  @model = @current_user.models.borrowable.detect {|m| @current_user.models.borrowable.where("models.name like '%#{m.name[0..3]}%'").length >= 6}
   page.execute_script %Q{ $("input[name='search_term']").focus() }
   fill_in "search_term", :with => @model.name[0..3]
 end
@@ -32,7 +32,7 @@ Dann(/^wird die Modell\-Ansichtsseite geöffnet$/) do
 end
 
 Angenommen(/^man gibt einen Suchbegriff ein$/) do
-  @model = @current_user.models.detect {|m| @current_user.models.where("models.name like '%#{m.name[0..3]}%'").length >= 6}
+  @model = @current_user.models.borrowable.detect {|m| @current_user.models.borrowable.where("models.name like '%#{m.name[0..3]}%'").length >= 6}
   fill_in "search_term", :with => @model.name[0..3]
 end
 
@@ -45,7 +45,7 @@ Dann(/^wird die Such\-Resultatseite angezeigt$/) do
 end
 
 Dann(/^man sieht alle gefundenen Modelle mit Bild, Modellname und Herstellername$/) do
-  @models = @current_user.models
+  @models = @current_user.models.borrowable
     .search(@model.name[0..3])
     .default_order.paginate(page: 1, per_page: 20)
     .map(&:name)

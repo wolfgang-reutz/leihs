@@ -10,7 +10,7 @@ module ModelModules
     module ClassMethods
 
       def filter (params, category, user, borrowable = false)
-        models = user.models
+        models = user.models.borrowable
         models = models.joins(:items).where(:items => {:parent_id => nil})
         models = models.joins(:items).where(:items => {:is_borrowable => true}) if borrowable
         models = if category then models.from_category_and_all_its_descendants(category.id) else Model.scoped end
